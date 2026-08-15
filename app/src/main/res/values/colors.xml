@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Plan B: Changli maple white. Warm, but neutral enough for long sessions. -->
+    <color name="wuwa_background">#FFF7F0</color>
+    <color name="wuwa_surface">#FFFFFF</color>
+    <color name="wuwa_surface_container">#FBF0E7</color>
+    <color name="wuwa_surface_container_high">#F7E7DC</color>
+    <color name="wuwa_primary">#C64A32</color>
+    <color name="wuwa_on_primary">#FFFFFF</color>
+    <color name="wuwa_primary_container">#F6D8CE</color>
+    <color name="wuwa_on_primary_container">#451108</color>
+    <color name="wuwa_secondary">#7F5D48</color>
+    <color name="wuwa_on_secondary">#FFFFFF</color>
+    <color name="wuwa_secondary_container">#F3E0D2</color>
+    <color name="wuwa_on_secondary_container">#321E13</color>
+    <color name="wuwa_on_surface">#2D241F</color>
+    <color name="wuwa_on_surface_variant">#74655C</color>
+    <color name="wuwa_outline">#9A7F70</color>
+    <color name="wuwa_outline_variant">#E3C9BA</color>
+    <color name="wuwa_error">#C64A4A</color>
+    <color name="wuwa_error_container">#FFDAD6</color>
+    <color name="wuwa_on_error_container">#410002</color>
+    <color name="wuwa_success">#3E8E68</color>
+    <color name="wuwa_warning">#A9680A</color>
+    <color name="wuwa_success_container">#D0EBDD</color>
+    <color name="wuwa_on_success_container">#0B3524</color>
+</resources>

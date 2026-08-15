@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <!-- AGP 8.13.2 is intentionally paired with its supported Gradle 8.13 line. -->
+    <issue id="AndroidGradlePluginVersion" severity="ignore" />
+</lint>

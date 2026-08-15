@@ -1,0 +1,11 @@
+* text=auto
+*.java text eol=lf
+*.gradle text eol=lf
+*.properties text eol=lf
+*.xml text eol=lf
+*.md text eol=lf
+*.ini text eol=lf
+*.bat text eol=crlf
+*.png binary
+*.webp binary
+*.jar binary

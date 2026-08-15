@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:orientation="horizontal">
+
+    <com.google.android.material.navigationrail.NavigationRailView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="@dimen/navigation_rail_width"
+        android:layout_height="match_parent"
+        android:background="?attr/colorSurfaceContainer"
+        android:elevation="8dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        app:itemIconSize="25dp"
+        app:itemIconTint="@color/bottom_navigation_item"
+        app:itemTextAppearanceActive="@style/TextAppearance.WuWa.BottomNavigation"
+        app:itemTextAppearanceInactive="@style/TextAppearance.WuWa.BottomNavigation"
+        app:itemTextColor="@color/bottom_navigation_item"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navigation"
+        app:menuGravity="center" />
+
+    <FrameLayout
+        android:id="@+id/page_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <include android:id="@+id/home_page" layout="@layout/page_home" />
+        <include android:id="@+id/config_page" layout="@layout/page_config" android:visibility="gone" />
+        <include android:id="@+id/backup_page" layout="@layout/page_backup" android:visibility="gone" />
+        <include android:id="@+id/settings_page" layout="@layout/page_settings" android:visibility="gone" />
+        <include android:id="@+id/licenses_page" layout="@layout/page_licenses" android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

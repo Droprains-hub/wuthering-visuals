@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/navigation_home" />
+    <item
+        android:id="@+id/navigation_config"
+        android:icon="@drawable/ic_tune"
+        android:title="@string/navigation_config" />
+    <item
+        android:id="@+id/navigation_backup"
+        android:icon="@drawable/ic_storage"
+        android:title="@string/navigation_backup" />
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/navigation_settings" />
+</menu>

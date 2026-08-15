@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Plan B dark companion: Maple Night. -->
+    <color name="wuwa_background">#17110E</color>
+    <color name="wuwa_surface">#211815</color>
+    <color name="wuwa_surface_container">#2A1F1A</color>
+    <color name="wuwa_surface_container_high">#33231D</color>
+    <color name="wuwa_primary">#F08A70</color>
+    <color name="wuwa_on_primary">#48150C</color>
+    <color name="wuwa_primary_container">#5B241A</color>
+    <color name="wuwa_on_primary_container">#FFDAD0</color>
+    <color name="wuwa_secondary">#D0A57C</color>
+    <color name="wuwa_on_secondary">#402A1A</color>
+    <color name="wuwa_secondary_container">#523B2B</color>
+    <color name="wuwa_on_secondary_container">#F5DCC2</color>
+    <color name="wuwa_on_surface">#F5E9E2</color>
+    <color name="wuwa_on_surface_variant">#D3BEB3</color>
+    <color name="wuwa_outline">#A58C7E</color>
+    <color name="wuwa_outline_variant">#4A342B</color>
+    <color name="wuwa_error">#FFB4AB</color>
+    <color name="wuwa_error_container">#93000A</color>
+    <color name="wuwa_on_error_container">#FFDAD6</color>
+    <color name="wuwa_success">#78B99A</color>
+    <color name="wuwa_warning">#E3AD63</color>
+    <color name="wuwa_success_container">#184F39</color>
+    <color name="wuwa_on_success_container">#C4F0D8</color>
+</resources>

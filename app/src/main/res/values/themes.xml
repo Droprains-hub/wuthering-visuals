@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.WuWaConfigManager" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/wuwa_primary</item>
+        <item name="colorOnPrimary">@color/wuwa_on_primary</item>
+        <item name="colorPrimaryContainer">@color/wuwa_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/wuwa_on_primary_container</item>
+        <item name="colorSecondary">@color/wuwa_secondary</item>
+        <item name="colorOnSecondary">@color/wuwa_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/wuwa_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/wuwa_on_secondary_container</item>
+        <item name="colorTertiary">@color/wuwa_success</item>
+        <item name="colorOnTertiary">@color/wuwa_on_primary</item>
+        <item name="colorTertiaryContainer">@color/wuwa_success_container</item>
+        <item name="colorOnTertiaryContainer">@color/wuwa_on_success_container</item>
+        <item name="colorSurface">@color/wuwa_surface</item>
+        <item name="colorSurfaceVariant">@color/wuwa_surface_container_high</item>
+        <item name="colorSurfaceContainer">@color/wuwa_surface_container</item>
+        <item name="colorSurfaceContainerHigh">@color/wuwa_surface_container_high</item>
+        <item name="colorOnSurface">@color/wuwa_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/wuwa_on_surface_variant</item>
+        <item name="colorOutline">@color/wuwa_outline</item>
+        <item name="colorOutlineVariant">@color/wuwa_outline_variant</item>
+        <item name="colorError">@color/wuwa_error</item>
+        <item name="colorErrorContainer">@color/wuwa_error_container</item>
+        <item name="colorOnErrorContainer">@color/wuwa_on_error_container</item>
+        <item name="android:colorBackground">@color/wuwa_background</item>
+        <item name="android:windowBackground">@color/wuwa_background</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.WuWa.MaterialAlertDialog</item>
+        <item name="dynamicColorThemeOverlay">@style/ThemeOverlay.Material3.DynamicColors.DayNight</item>
+    </style>
+
+    <style name="ThemeOverlay.WuWa.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.WuWa.Dialog</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.WuWa.DialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.WuWa.DialogButton</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.WuWa.DialogButton</item>
+        <item name="android:windowMinWidthMajor">88%</item>
+        <item name="android:windowMinWidthMinor">88%</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.WuWa.Dialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">28dp</item>
+    </style>
+
+    <style name="Widget.WuWa.DialogButton" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="ShapeAppearance.WuWa.Card" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="ShapeAppearance.WuWa.CardSmall" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="ShapeAppearance.WuWa.Button" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="Widget.WuWa.Card" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">?attr/colorSurface</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">1dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.WuWa.Card</item>
+    </style>
+
+    <style name="Widget.WuWa.StatusCard" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">?attr/colorSurfaceContainer</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.WuWa.CardSmall</item>
+    </style>
+
+    <style name="Widget.WuWa.PrimaryButton" parent="Widget.Material3.Button">
+        <item name="android:minHeight">60dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.WuWa.Button</item>
+        <item name="iconPadding">10dp</item>
+    </style>
+
+    <style name="Widget.WuWa.SecondaryButton" parent="Widget.Material3.Button.TonalButton">
+        <item name="android:minHeight">56dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.WuWa.Button</item>
+        <item name="iconPadding">6dp</item>
+        <item name="iconSize">18dp</item>
+    </style>
+
+    <style name="Widget.WuWa.PresetSegmentButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.WuWa.SectionTitle" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.WuWa.BottomNavigation" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="TextAppearance.WuWa.FirstRunItem" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+</resources>

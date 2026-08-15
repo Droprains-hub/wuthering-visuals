@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Public client endpoints and author channels. Never place management credentials here. -->
+    <string name="remote_notice_endpoint" translatable="false">https://api.droprains.me/api/notice.json</string>
+    <!-- Production uses the verified domain only; HTTPS-by-IP is intentionally disabled. -->
+    <string name="remote_notice_fallback_endpoint" translatable="false"></string>
+    <string name="official_download_url" translatable="false">https://drive.uc.cn/s/38da4b24c4d54</string>
+    <string name="support_author_name" translatable="false">云熙遇椿</string>
+    <string name="support_bilibili_url" translatable="false">https://m.bilibili.com/space/509898090</string>
+    <string name="support_qq_group_url" translatable="false">https://qm.qq.com/q/jDjZ217cNq</string>
+    <string name="source_repository_url" translatable="false">https://github.com/Droprains-hub/wuthering-visuals</string>
+</resources>
