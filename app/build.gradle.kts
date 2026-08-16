@@ -12,8 +12,8 @@ android {
         applicationId = "com.wuwa.config.manager"
         minSdk = 24
         targetSdk = 36
-        versionCode = 99999
-        versionName = "999.99"
+        versionCode = 102
+        versionName = "1.0.2"
 
         buildConfigField("int", "PRESET_REVISION", "1")
 
