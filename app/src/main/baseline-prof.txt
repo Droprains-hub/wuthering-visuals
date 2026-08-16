@@ -1,0 +1,31 @@
+# Baseline profile for Wuthering Visuals.
+# Hand-written starter set targeting the cold-start path.
+# Regenerate on a device with androidx.benchmark.macro (BaselineProfileRule) for full coverage.
+
+# --- App entry ---
+HSPLcom/wuwa/config/manager/MainActivity;-><init>()V
+HSPLcom/wuwa/config/manager/MainActivity;->onCreate(Landroid/os/Bundle;)V
+HSPLcom/wuwa/config/manager/MainActivity;->onResume()V
+HSPLcom/wuwa/config/manager/ui/MainScreenKt;->MainScreen(Lcom/wuwa/config/manager/ui/MainViewModel;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)V
+HSPLcom/wuwa/config/manager/ui/theme/ThemeKt;->WuWaTheme(ZZLkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V
+
+# --- ViewModel / core ---
+HSPLcom/wuwa/config/manager/ui/MainViewModel;-><init>(Landroid/app/Application;)V
+HSPLcom/wuwa/config/manager/ui/MainViewModel;->refreshUi()V
+HSPLcom/wuwa/config/manager/ui/MainViewModel;->onActivityResumed()V
+
+# --- Screens ---
+HSPLcom/wuwa/config/manager/ui/screens/HomeScreenKt;->HomeScreen(Lcom/wuwa/config/manager/ui/MainViewModel;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)V
+HSPLcom/wuwa/config/manager/ui/screens/ConfigScreenKt;->ConfigScreen(Lcom/wuwa/config/manager/ui/MainViewModel;Landroidx/compose/runtime/Composer;II)V
+HSPLcom/wuwa/config/manager/ui/screens/BackupScreenKt;->BackupScreen(Lcom/wuwa/config/manager/ui/MainViewModel;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)V
+HSPLcom/wuwa/config/manager/ui/screens/SettingsScreenKt;->SettingsScreen(Lcom/wuwa/config/manager/ui/MainViewModel;Landroidx/compose/runtime/Composer;II)V
+
+# --- Compose / AndroidX startup essentials ---
+HSPLandroidx/compose/ui/platform/AndroidComposeView;-><init>(Landroid/content/Context;)V
+HSPLandroidx/compose/ui/platform/ComposeView;->setContent(Lkotlin/jvm/functions/Function2;)V
+HSPLandroidx/compose/runtime/CompositionKt;->rememberCompositionContext()Landroidx/compose/runtime/CompositionContext;
+HSPLandroidx/compose/material3/MaterialThemeKt;->MaterialTheme(Landroidx/compose/material3/MaterialThemeKt;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V
+HSPLandroidx/compose/material3/ScaffoldKt;->Scaffold(Landroidx/compose/material3/ScaffoldKt;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V
+HSPLandroidx/compose/material3/NavigationBarKt;->NavigationBar(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/graphics/Color;Landroidx/compose/ui/graphics/Color;Landroidx/compose/ui/graphics/Color;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V
+HSPLandroidx/compose/material3/TextKt;->Text(Ljava/lang/String;Landroidx/compose/ui/Modifier;Landroidx/compose/ui/graphics/Color;Landroidx/compose/ui/text/font/FontFamily;Landroidx/compose/ui/unit/TextUnit;Landroidx/compose/ui/text/font/FontStyle;Landroidx/compose/ui/text/font/FontWeight;Landroidx/compose/ui/text/font/FontFamily;Landroidx/compose/ui/text/style/TextOverflow;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/text/AnnotatedString;Landroidx/compose/ui/graphics/Color;Landroidx/compose/ui/text/TextStyle;Landroidx/compose/ui/unit/TextUnit;Landroidx/compose/ui/unit/TextUnit;Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;Landroidx/compose/ui/text/style/TextIndent;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;II)V
+HSPLandroidx/activity/ComponentActivity;->setContent(Landroidx/compose/runtime/Composer;II)V

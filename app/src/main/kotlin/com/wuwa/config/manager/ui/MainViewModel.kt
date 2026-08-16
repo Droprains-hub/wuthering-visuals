@@ -981,7 +981,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         loadJob = viewModelScope.launch {
             while (isActive && generation == loadGeneration) {
                 sampleLoadCycle()
-                delay(2000)
+                delay(3000)
             }
         }
     }

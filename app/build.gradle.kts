@@ -4,16 +4,41 @@ plugins {
     alias(libs.plugins.compose.compiler)
 }
 
+import java.util.Properties
+
+val keystoreProps = Properties().apply {
+    val propsFile = rootProject.file("keystore.properties")
+    if (propsFile.exists()) {
+        propsFile.inputStream().use { load(it) }
+    }
+}
+val hasSigningConfig =
+    keystoreProps.containsKey("storeFile") &&
+        keystoreProps.containsKey("storePassword") &&
+        keystoreProps.containsKey("keyAlias") &&
+        keystoreProps.containsKey("keyPassword")
+
 android {
     namespace = "com.wuwa.config.manager"
     compileSdk = 36
+
+    signingConfigs {
+        if (hasSigningConfig) {
+            create("release") {
+                storeFile = file(keystoreProps.getProperty("storeFile"))
+                storePassword = keystoreProps.getProperty("storePassword")
+                keyAlias = keystoreProps.getProperty("keyAlias")
+                keyPassword = keystoreProps.getProperty("keyPassword")
+            }
+        }
+    }
 
     defaultConfig {
         applicationId = "com.wuwa.config.manager"
         minSdk = 24
         targetSdk = 36
-        versionCode = 102
-        versionName = "1.0.2"
+        versionCode = 103
+        versionName = "1.0.3"
 
         buildConfigField("int", "PRESET_REVISION", "1")
 
@@ -31,6 +56,9 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            if (hasSigningConfig) {
+                signingConfig = signingConfigs.getByName("release")
+            }
         }
     }
 
@@ -82,6 +110,8 @@ dependencies {
 
     implementation(libs.androidx.appcompat)
     implementation(libs.com.google.android.material)
+
+    implementation(libs.androidx.profileinstaller)
 
     implementation(libs.dev.rikka.shizuku.api)
     implementation(libs.dev.rikka.shizuku.provider)

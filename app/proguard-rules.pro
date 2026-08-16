@@ -10,3 +10,8 @@
 -keep class com.wuwa.config.manager.privilege.IShellService$Default { *; }
 
 # org.json models are parsed explicitly; no reflection-based model keeps are required.
+
+# ProfileInstaller (baseline profiles)
+-keep class androidx.profileinstaller.ProfileInstaller
+-dontwarn androidx.profileinstaller.ProfileInstaller
+

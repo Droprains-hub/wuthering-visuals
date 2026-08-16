@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="page_horizontal_padding">20dp</dimen>
-    <dimen name="page_top_padding">26dp</dimen>
-    <dimen name="page_bottom_padding">32dp</dimen>
-    <dimen name="navigation_rail_width">88dp</dimen>
-</resources>
