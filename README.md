@@ -3,10 +3,11 @@
 鸣潮画质助手是一款面向 Android 的开源配置替换工具。应用不会解析或改写 INI 内容，只通过 Root 或 Shizuku 执行 Shell 文件操作，将内置预设复制到《鸣潮》的配置目录，并提供备份、恢复和方向控制等辅助功能。
 
 - 应用包名：`com.wuwa.config.manager`
-- 当前版本：`v1.0`（`versionCode 1`）
+- 当前版本：`v999.99`（`versionCode 99999`）
 - 最低系统：Android 7.0（API 24）
 - 目标系统：Android 16（API 36）
-- 开发语言：Java
+- 界面：Kotlin + Jetpack Compose + Material 3（MD3，支持 Material You 动态取色）
+- 核心逻辑：Java
 
 ## 重要：画质预设仅用于测试
 
@@ -54,17 +55,20 @@
 
 ```text
 app/                 Android 应用源码与资源
-gradle/wrapper/      Gradle Wrapper
-build.gradle         根项目构建配置
-settings.gradle      项目设置
+  src/main/java/      核心逻辑（Java）
+  src/main/kotlin/    界面（Kotlin + Compose + Material 3）
+gradle/libs.versions.toml   版本目录（参照 KernelSU）
+build.gradle.kts     根项目构建配置
+settings.gradle.kts  项目设置
 ```
 
 ## 构建环境
 
-- JDK 17
+- JDK 17 或 21
 - Android SDK 36
 - Android Gradle Plugin 8.13.2
-- Gradle 8.13
+- Gradle 9.5.1
+- Kotlin 2.2.20 + Compose（Material 3）
 
 仅进行源码检查与测试：
 
